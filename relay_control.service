@@ -1,0 +1,11 @@
+
+[Unit]
+Description=Python Relay Control Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/'script/location'/relay_control.py
+
+[Install]
+WantedBy=multi-user.target
